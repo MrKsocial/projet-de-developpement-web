@@ -2,6 +2,7 @@ img:hover {
     
     animation: shake 0.5s;
     animation-iteration-count: infinite;
+    border-radius: 600PX;
   }
   
   @keyframes shake {
