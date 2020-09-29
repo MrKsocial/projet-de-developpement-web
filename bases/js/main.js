@@ -22,7 +22,7 @@ for(var i = 0; i < bouton.length; i++) {
       })
     };
 */
-
+/*
 const bouton2=document.getElementsByClassName('btn btn-primary');
 
 if(bouton2!=null)
@@ -36,7 +36,7 @@ if(bouton2!=null)
           }
     });
 }
-
+*/
 
 const bouton3=document.getElementsByClassName('btn btn-primary');
 
@@ -45,5 +45,6 @@ if(bouton3!=null)
     bouton3[0].addEventListener("click", function() {
         var table = document.getElementsByTagName("table");
         //ternaire
+        table[0].style.display === "none"?table[0].style.display = "block" : table[0].style.display = "none";
     });
 }
