@@ -7,43 +7,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <title>Document</title>
 </head>
 
 <body>
-    <div><img src="images/mv.jpg"></div>
-<marquee><h1 style="color: red;">Initiation aux librairies</h1></marquee> 
-<button type="button" class="btn btn-primary" id="bouton">Mon bouton</button>
+  <div><img src="images/mv.jpg"></div>
+  <marquee><h1 style="color: red;">Initiation aux librairies</h1></marquee> 
+  <button type="button" class="btn btn-primary" id="bouton">Mon bouton</button>
 
-<table class="table table-striped table-dark">
-    <thead>
-      <tr>
-        <th scope="col">Nom</th>
-        <th scope="col">Prenom</th>
-        <th scope="col">Date de naissance</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Joshua</td>
-        <td>Vanderstichelen</td>
-        <td>24/08/1989</td>
-      </tr>
-      <tr>
-        <td>Maximilien</td>
-        <td>Verberke</td>
-        <td>29/08/1989</td>
-      </tr>
-      <tr>
-        <td>Alex</td>
-        <td>Sansse</td>
-        <td>12/04/1989</td>
-      </tr>
-    </tbody>
-  </table>
+  <table class="table table-striped table-dark">
+      <thead>
+        <tr>
+          <th scope="col">Nom</th>
+          <th scope="col">Prenom</th>
+          <th scope="col">Date de naissance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Joshua</td>
+          <td>Vanderstichelen</td>
+          <td class="dateNaissance">24/08/1989</td>
+        </tr>
+        <tr>
+          <td>Maximilien</td>
+          <td>Verberke</td>
+          <td class="dateNaissance">29/08/1989</td>
+        </tr>
+        <tr>
+          <td>Alex</td>
+          <td>Sansse</td>
+          <td class="dateNaissance">12/04/1989</td>
+        </tr>
+      </tbody>
+    </table>
 
-<script type="text/javascript" src="js/main.js"></script>
+  <div id="pop" style="display: none; width: 100%; position: fixed;
+  top: 10%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;">
+    <img src="images/testMiam.PNG" id="myPopup" >
+  </div> 
+
+  <button type="button" class="btn btn-primary" id="boutonSup">Supprimer Date</button>
+  <button type="button" class="btn btn-primary" id="popup">Try Me Bitch</button>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
 </body>
 

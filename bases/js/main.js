@@ -36,6 +36,10 @@ if(bouton2!=null)
           }
     });
 }
+
+$('#bouton').on("click", function(){
+  $('table').find('tr').last().remove();
+});
 */
 
 const bouton3=document.getElementsByClassName('btn btn-primary');
@@ -48,3 +52,25 @@ if(bouton3!=null)
         table[0].style.display === "none"?table[0].style.display = "block" : table[0].style.display = "none";
     });
 }
+
+const boutonSupp=document.getElementById('boutonSup');
+
+boutonSupp.addEventListener("click",function(){
+  var supDate=document.getElementsByClassName("dateNaissance");
+  for(i=0; i<supDate.length;i++)
+  {
+    supDate[i].innerHTML="";
+  }  
+})
+
+
+const popup=document.getElementById('popup');
+popup.addEventListener("click",function(){
+  
+  var x = document.getElementById("pop");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+})
